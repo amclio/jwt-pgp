@@ -1,0 +1,18 @@
+{
+  "name": "jwt-pgp",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Amclio <lincroe@protonamil.com>",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "license": "MIT"
+}
