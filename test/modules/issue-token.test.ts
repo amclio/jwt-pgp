@@ -1,14 +1,15 @@
 import test from 'ava'
 import { createSignedBody } from '../../src/modules/create-signed-body.js'
-import { validateSignedBody } from '../../src/modules/validate-signed-body.js'
+import { issueToken } from '../../src/modules/issue-token.js'
 import { configs } from '../configs.js'
 
-test('Validate Signed Body', async (t) => {
+test('Issue Token', async (t) => {
   const {
     publicKey,
     privateKey,
     email,
     privateKeyPassphrase: passphrase,
+    jwtSecret,
   } = configs
 
   const signedBody = await createSignedBody({
@@ -18,9 +19,10 @@ test('Validate Signed Body', async (t) => {
     options: { passphrase },
   })
 
-  const validated = await validateSignedBody({
+  const token = await issueToken({
     signedBody,
-    publicKey,
+    email,
+    secret: jwtSecret,
   })
 
   t.pass()

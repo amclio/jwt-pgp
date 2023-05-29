@@ -12,7 +12,9 @@
     "test": "pnpm build && ava"
   },
   "dependencies": {
-    "jsonwebtoken": "^9.0.0",
+    "jose": "^4.14.4",
+    "ky": "^0.33.3",
+    "ky-universal": "^0.11.0",
     "openpgp": "^5.9.0"
   },
   "devDependencies": {

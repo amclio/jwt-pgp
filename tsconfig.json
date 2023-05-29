@@ -7,9 +7,9 @@
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    // "strict": true,
+    "strict": true,
     "sourceMap": true,
-    "strict": false,
+    // "strict": false,
     "skipLibCheck": true
   }
 }

@@ -3,4 +3,5 @@ export const configs = {
   privateKey: process.env.PRIVATE_KEY ?? '',
   privateKeyPassphrase: process.env.PRIVATE_KEY_PASSPHRASE ?? '',
   email: process.env.EMAIL ?? '',
+  jwtSecret: process.env.JWT_SECRET ?? '',
 }
