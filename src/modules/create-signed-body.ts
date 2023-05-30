@@ -27,7 +27,7 @@ export async function createSignedBody({
   }
 
   const message = await pgp.createCleartextMessage({
-    text: publicKey + email,
+    text: email,
   })
 
   const signedBody = await pgp.sign({ message, signingKeys: key })
